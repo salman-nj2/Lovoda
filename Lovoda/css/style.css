@@ -1,3 +1,5 @@
+/* Start of Home page */
+
 body {
   margin: 0;
   padding: 0;
@@ -10,22 +12,7 @@ body {
   outline: 0;
 }
 
-@font-face {
-  font-family: FontAwesome;
-  src: url(https://cdn11.bigcommerce.com/s-8pcbviyy/stencil/038f3100-ac6f-0138-c9df-0242ac11000f/e/2b252600-51e6-0139-cb33-6ea638bec48b/fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0);
-  src: url(https://cdn11.bigcommerce.com/s-8pcbviyy/stencil/038f3100-ac6f-0138-c9df-0242ac11000f/e/2b252600-51e6-0139-cb33-6ea638bec48b/fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.7.0)
-      format("embedded-opentype"),
-    url(https://cdn11.bigcommerce.com/s-8pcbviyy/stencil/038f3100-ac6f-0138-c9df-0242ac11000f/e/2b252600-51e6-0139-cb33-6ea638bec48b/fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0)
-      format("woff2"),
-    url(https://cdn11.bigcommerce.com/s-8pcbviyy/stencil/038f3100-ac6f-0138-c9df-0242ac11000f/e/2b252600-51e6-0139-cb33-6ea638bec48b/fonts/font-awesome/fontawesome-webfont.woff?v=4.7.0)
-      format("woff"),
-    url(https://cdn11.bigcommerce.com/s-8pcbviyy/stencil/038f3100-ac6f-0138-c9df-0242ac11000f/e/2b252600-51e6-0139-cb33-6ea638bec48b/fonts/font-awesome/fontawesome-webfont.ttf?v=4.7.0)
-      format("truetype"),
-    url(https://cdn11.bigcommerce.com/s-8pcbviyy/stencil/038f3100-ac6f-0138-c9df-0242ac11000f/e/2b252600-51e6-0139-cb33-6ea638bec48b/fonts/font-awesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular)
-      format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
+/* Header */
 
 .header-top {
   position: relative;
@@ -233,6 +220,8 @@ body {
 .navPages-container {
   margin-top: 35px;
 }
+
+/* End of Header */
 
 /* Main Body */
 
@@ -576,3 +565,5 @@ section::-webkit-scrollbar {
   text-decoration: none;
   color: #fff;
 }
+
+/* end of home page */
