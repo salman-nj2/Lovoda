@@ -1,3 +1,5 @@
+
+
 // Carousel
 
 const carouselSlide = document.querySelector('.carousel-slide')
@@ -25,6 +27,40 @@ function frd(){
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
 
+// End of Carousel
 
 
+// Stick Nav bar
+window.addEventListener("scroll",function(){
+    var header = document.querySelector('.whole-div')
+    header.classList.toggle("sticky", window.scrollY > 275);
+})
+//end of sticky nav bar
 
+// search bar clicked
+
+
+function search() {
+    var element = document.getElementById("search");
+  
+  
+      element.classList.toggle("mystyle");
+    var input = document.createElement("input");
+
+    input.classList.toggle('input')
+    var btn = document.createElement('button')
+    input.placeholder = "Search";
+    var iTag = document.createElement('i')
+    iTag.innerHTML = '<i class="fa fa-search"></i>'
+    iTag.style.color = "black"
+    iTag.style.cursor = "pointer"
+    iTag.addEventListener('click', function(){
+        window.location.href ="https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder"
+    })
+    btn.innerHTML = "&#215"
+    btn.setAttribute('class',"btn")
+    element.append(btn,input,iTag)
+    btn.addEventListener('click', function(){
+        element.remove()          
+    })
+}
