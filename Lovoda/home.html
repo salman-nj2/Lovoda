@@ -18,7 +18,7 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="#"><span>ACCOUNT</span></a></li>
-                    <li><a href="#"><span>LOGIN</span></a></li>
+                    <li><a href="#" id="login-popup" onclick="loginModal()"><span>LOGIN</span></a></li>
                     <li><a href="#"><span>REGISTER</span></a></li>
                 </ul>
             </nav>
@@ -445,7 +445,7 @@
 <div class="whole-div">
     <div class="navBar-sticky">
         <div class="sticky-logo">
-            <a href="./home.html">
+            <a href="./home.html" >
             <img src="https://lovoda.com/product_images/uploaded_images/logosticky.png" alt="">
             </a>
         </div>
@@ -994,6 +994,34 @@
     </section>
 </div>
 </body>
+
+<!-- Login Popup Modal -->
+<div class="modal-container">
+    <div class="modal">
+        <i class="fa fa-times" onclick="closeModal()"></i>
+        <div class="modal-body">
+            <div class="modal-content">
+                <h3>Sign In</h3>
+                <form class="login-form">
+                    <div class="email-container">
+                        <label class="email-label">Email Addresss <small>*</small></label>
+                        <input type="email" id="email-login" placeholder="email">
+                    </div>
+                    <div class="email-container">
+                        <label class="password-label">Password<small> *</small></label>
+                        <input type="password" id="password-login" placeholder="password">
+                    </div>
+                    </form>
+                    <div class="buttons">
+                        <button id="login-btn">LOGIN</button>
+                        <button id="register-btn">REGISTER</button>
+                    </div>
+                <a href="#"><p>Forgot your password?</p></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Login Popup Modal -->
 </html>
 <script src="./home js/home.js"></script>
 

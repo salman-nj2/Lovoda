@@ -37,6 +37,8 @@ window.addEventListener("scroll",function(){
 })
 //end of sticky nav bar
 
+
+
 // search bar clicked
 
 
@@ -55,7 +57,7 @@ function search() {
     iTag.style.color = "black"
     iTag.style.cursor = "pointer"
     iTag.addEventListener('click', function(){
-        window.location.href ="https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder"
+        window.location.href ="#"   // product link to be searched manually
     })
     btn.innerHTML = "&#215"
     btn.setAttribute('class',"btn")
@@ -63,4 +65,20 @@ function search() {
     btn.addEventListener('click', function(){
         element.remove()          
     })
+}
+
+
+/// login popup
+
+
+const open = document.getElementById('login-popup')
+const modal_container = document.querySelector('.modal-container')
+const close = document.querySelector('fa fa-times')
+
+function loginModal(){
+    modal_container.classList.add('showModal');
+}
+
+function closeModal(){
+    modal_container.classList.remove('showModal');
 }

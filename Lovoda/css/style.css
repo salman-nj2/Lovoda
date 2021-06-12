@@ -248,7 +248,7 @@ body {
 .hover-new {
   height: auto;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
   visibility: hidden;
   position: absolute;
   left: 0;
@@ -662,7 +662,9 @@ section::-webkit-scrollbar {
   text-decoration: none;
   color: #fff;
 }
-
+.footer-coloums a:hover {
+  color: #000;
+}
 /* end of home page */
 
 /* Sticky navigation bar */
@@ -719,7 +721,7 @@ section::-webkit-scrollbar {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 10;
   padding-top: 10px;
   padding-bottom: 10px;
   transform: translateY(-150%);
@@ -736,7 +738,7 @@ section::-webkit-scrollbar {
   width: 100%;
   background-color: #000;
   height: 100px;
-  z-index: 1000000;
+  z-index: 10;
 }
 .mystyle {
   position: absolute;
@@ -771,3 +773,125 @@ section::-webkit-scrollbar {
   font-size: 15px;
   opacity: 0.7;
 }
+
+/* modal-login */
+
+.modal-body {
+  padding: 75px 150px;
+  text-align: center;
+}
+.modal {
+  background-color: #fff;
+  width: 570px;
+  height: 570px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.modal-container.showModal {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* modal-content styling */
+
+.modal > i {
+  float: right;
+  margin: 30px;
+  height: 33px;
+  color: #d4a299;
+  font-size: 30px;
+  cursor: pointer;
+}
+.modal-content {
+  text-align: left;
+}
+.modal h3 {
+  letter-spacing: 0.05em;
+  color: #383838;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  margin: 0 0 20px;
+  padding: 5px 0;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 24px;
+}
+.email-container,
+.passwords-container {
+  margin-bottom: 20px;
+}
+.email-container label {
+  font-weight: 500;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  line-height: 1.5;
+}
+.email-container input {
+  height: 42px;
+  color: #505050;
+  border-color: #69d66f;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.75rem 1rem;
+  transition: border-color 0.1s ease-out;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+email-container input::placeholder {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+}
+.buttons {
+  max-width: 100rem;
+}
+.buttons button {
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  height: 42px;
+  color: #000;
+  border: 2px solid #000;
+  background: #fff;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.modal-content a {
+  color: #000;
+  text-decoration: none;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 13px;
+}
+.login-form small {
+  color: red;
+}
+
+/* end of login-modal */
