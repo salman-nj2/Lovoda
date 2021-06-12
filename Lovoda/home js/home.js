@@ -13,7 +13,7 @@ carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; // wi
 
 function prev(){
     if(counter >= 3) return
-    carouselSlide.style.transition = "transform 0.5s ease-in-out";
+    carouselSlide.style.transition = "transform 0.8s ease-in-out";
     counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
@@ -22,7 +22,7 @@ function prev(){
 
 function frd(){
     if(counter<=0) return
-    carouselSlide.style.transition = "transform 0.5s ease-in-out";
+    carouselSlide.style.transition = "transform 0.8s ease-in-out";
     counter--;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 }
@@ -30,7 +30,7 @@ function frd(){
 // End of Carousel
 
 
-// Stick Nav bar
+// Stick Navigation bar
 window.addEventListener("scroll",function(){
     var header = document.querySelector('.whole-div')
     header.classList.toggle("sticky", window.scrollY > 275);

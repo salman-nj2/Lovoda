@@ -231,7 +231,6 @@ body {
   height: 0.5px;
 }
 .navPages-list > li > a:hover::after,
-.navBar-list-sticky a:hover::after,
 .new-content-item a:hover::after {
   width: 100%;
   transition: width 0.3s;
@@ -391,9 +390,11 @@ section::-webkit-scrollbar {
   object-fit: contain;
   transition: transform 2s;
   max-width: 100%;
+  opacity: 1;
 }
 .below-carousel img:hover {
   transform: scale(1.2);
+  opacity: 0.6;
 }
 .below-carousel > div {
   position: relative;
